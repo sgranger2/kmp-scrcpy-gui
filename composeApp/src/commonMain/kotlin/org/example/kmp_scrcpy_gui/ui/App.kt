@@ -43,7 +43,7 @@ fun App(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             TopAppBar(
-                title = { Text("scrcpy GUI") },
+                title = { Text("Scrcpy GUI") },
                 actions = {
                     // Refresh button
                     IconButton(onClick = {
