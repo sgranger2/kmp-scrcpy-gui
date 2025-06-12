@@ -1,7 +1,10 @@
-package org.example.kmp_scrcpy_gui
+package org.example.kmp_scrcpy_gui.ui
 
 import androidx.compose.runtime.*
 import kotlinx.coroutines.launch
+import org.example.kmp_scrcpy_gui.data.DeviceViewModel
+import org.example.kmp_scrcpy_gui.data.ScrcpyService
+import org.example.kmp_scrcpy_gui.data.SettingsStore
 
 enum class Screen {
     DEVICES,

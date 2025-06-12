@@ -1,4 +1,4 @@
-package org.example.kmp_scrcpy_gui
+package org.example.kmp_scrcpy_gui.data
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -6,6 +6,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import org.example.kmp_scrcpy_gui.data.model.Device
 
 class DeviceViewModel(private val scrcpyService: ScrcpyService) {
     private val scope = CoroutineScope(Dispatchers.Main)

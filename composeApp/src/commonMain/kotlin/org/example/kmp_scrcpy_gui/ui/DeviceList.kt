@@ -1,4 +1,4 @@
-package org.example.kmp_scrcpy_gui
+package org.example.kmp_scrcpy_gui.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,6 +16,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import org.example.kmp_scrcpy_gui.data.model.Device
+import org.example.kmp_scrcpy_gui.data.model.DeviceStatus
 
 @Composable
 fun DeviceList(

@@ -1,4 +1,4 @@
-package org.example.kmp_scrcpy_gui
+package org.example.kmp_scrcpy_gui.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -19,6 +19,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
+import org.example.kmp_scrcpy_gui.data.model.DeviceStatus
+import org.example.kmp_scrcpy_gui.data.DeviceViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

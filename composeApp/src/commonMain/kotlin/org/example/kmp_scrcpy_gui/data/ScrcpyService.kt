@@ -1,10 +1,12 @@
-package org.example.kmp_scrcpy_gui
+package org.example.kmp_scrcpy_gui.data
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.withContext
+import org.example.kmp_scrcpy_gui.data.model.Device
+import org.example.kmp_scrcpy_gui.data.model.DeviceStatus
 import java.io.BufferedReader
 import java.io.InputStreamReader
 

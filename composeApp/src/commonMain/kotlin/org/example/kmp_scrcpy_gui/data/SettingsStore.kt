@@ -1,4 +1,4 @@
-package org.example.kmp_scrcpy_gui
+package org.example.kmp_scrcpy_gui.data
 
 import java.io.File
 import java.util.Properties
