@@ -43,6 +43,8 @@ kotlin {
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutinesSwing)
+            implementation(libs.jna.jpms)
+            implementation(libs.jna.platform.jpms)
         }
     }
 }

@@ -12,12 +12,15 @@ androidx-lifecycle = "2.9.0"
 androidx-testExt = "1.2.1"
 composeHotReload = "1.0.0-alpha10"
 composeMultiplatform = "1.8.1"
+jnaJpms = "5.14.0"
 junit = "4.13.2"
 kotlin = "2.1.21"
 kotlinx-coroutines = "1.10.2"
 kotlinxDatetime = "0.6.2"
 
 [libraries]
+jna-jpms = { module = "net.java.dev.jna:jna-jpms", version.ref = "jnaJpms" }
+jna-platform-jpms = { module = "net.java.dev.jna:jna-platform-jpms", version.ref = "jnaJpms" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-testJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { module = "junit:junit", version.ref = "junit" }

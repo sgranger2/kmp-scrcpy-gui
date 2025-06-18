@@ -1,5 +1,6 @@
 package org.example.kmp_scrcpy_gui.ui
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -24,7 +25,7 @@ import org.example.kmp_scrcpy_gui.data.DeviceViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun App(
+fun HomeScreen(
     viewModel: DeviceViewModel,
     settings: Map<String, String>,
     onNavigateToSettings: () -> Unit
@@ -39,11 +40,14 @@ fun App(
 
     MaterialTheme {
         Column(
-            modifier = Modifier.fillMaxSize().padding(16.dp),
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+                .background(MaterialTheme.colorScheme.surfaceContainer),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             TopAppBar(
-                title = { Text("Scrcpy GUI") },
+                title = { Text("Home") },
                 actions = {
                     // Refresh button
                     IconButton(onClick = {
@@ -58,7 +62,7 @@ fun App(
                     IconButton(onClick = onNavigateToSettings) {
                         Text("⚙️")
                     }
-                }
+                },
             )
 
             if (isLoading) {
@@ -66,8 +70,9 @@ fun App(
             } else {
                 if (devices.isEmpty()) {
                     Text(
-                        "No devices connected",
-                        modifier = Modifier.padding(16.dp)
+                        text = "No devices connected",
+                        modifier = Modifier.padding(16.dp),
+                        color = MaterialTheme.colorScheme.onSurface
                     )
                 } else {
                     DeviceList(
@@ -81,10 +86,6 @@ fun App(
                     )
                 }
             }
-
-            Spacer(modifier = Modifier.weight(1f))
-
-            Text("scrcpy must be installed and in PATH", style = MaterialTheme.typography.bodySmall)
         }
     }
 }
